@@ -15,9 +15,6 @@ print('Статистика: ')
 stat_product = {'название': [], 'цена': [], 'количество' : [], 'ед.изм.': []}
 
 for el in product_list:
-   stat_product['название'].append(el[1]['название'])
-   stat_product['цена'].append(el[1]['цена'])
-   stat_product['количество'].append(el[1]['количество'])
-   stat_product['ед.изм.'].append(el[1]['ед.изм.'])
-
+    for key in el[1]:
+        stat_product[key].append(el[1][key])
 print(stat_product)
