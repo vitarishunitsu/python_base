@@ -12,10 +12,10 @@ for i in range(3):
 
 print('Статистика: ')
 
-print(product_list)
 stat_product = dict.fromkeys(product.keys(), [])
-print(stat_product)
+
 for el in product_list:
     for key in el[1]:
         stat_product[key].append(el[1].get(key))
 
+print(stat_product)
