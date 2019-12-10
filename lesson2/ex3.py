@@ -14,6 +14,6 @@ while True:
 
 
 for key in seasons:
-    if seasons[key].count(usr_month):
+    if usr_month in seasons[key]:
         print(f'Месяц {usr_month} относится к {key}')
         break
