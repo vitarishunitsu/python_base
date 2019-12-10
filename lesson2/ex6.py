@@ -12,7 +12,10 @@ for i in range(3):
 
 print('Статистика: ')
 
-stat_product = dict.fromkeys(product.keys(), [])
+stat_product = dict.fromkeys(product.keys())
+
+for i in stat_product:
+    stat_product[i] = []
 
 for el in product_list:
     for key in el[1]:
