@@ -8,8 +8,8 @@ class Matrix:
     def __add__(self, other):
         new_matrix = self.data[:]
         for column in range(len(new_matrix)):
-            for ind in range(len(new_matrix[column])):
-                new_matrix[column][ind] += other.data[column][ind]
+            for row in range(len(new_matrix[column])):
+                new_matrix[column][row] += other.data[column][row]
         return Matrix(new_matrix)
 
 
@@ -20,7 +20,7 @@ my_list_1 = [
 ]
 
 my_list_2 = [
-    [6, 2],
+    [6, 2, 5],
     [2, -2, 3],
     [1, 2, 15],
 ]
